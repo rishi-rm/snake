@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    height: 90vh;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    background-color: rgba(127, 127, 127, 0.179);
+}
+canvas {
+    position: relative; /* Allows z-index to take effect */
+    z-index: 1; /* Lower z-index so it appears behind the h2 */
+}
+.gameover{
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    top: 50%;           /* Adjust to position it over the canvas */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the h2 */
+    z-index: 2; /* Higher z-index so it appears above the canvas */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional background for readability */
+    padding: 10px;
+    border-radius: 5px;
+}
